@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabut</title>
+</head>
+<body>
+    <button id="show-photo">Tampilkan Foto</button>
+    <button id="show-location">Tampilkan Lokasi</button>
+    <a id="link" href="data bases">Akses Database</a>
+    <input type="file" id="input" accept="image/*" />
+    <input type="file" id="input" accept="video/*" />
+    <a href="#" id="link">Mengakses Galeri</a>
+    <img id="photo" src="" alt="Foto">
+    <div id="location"></div>
+</body>
+</html>
+
+<!-- kode untuk menampilkan lokasi dan poto layar depan -->
+<script>
+    document.getElementById("show-photo").addEventListener("click", function() {
+      document.getElementById("photo").src = "https://example.com/image.jpg";
+    });
+    document.getElementById("show-location").addEventListener("click", function() {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        document.getElementById("location").innerHTML =
+          "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+      });
+    });
+  </script>
+  
