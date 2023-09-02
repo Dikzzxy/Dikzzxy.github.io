@@ -1,0 +1,332 @@
+/*!
+  * Item: Willy Wonka Theme
+  * Description: Personal Portfolio Website Template
+  * part 1 dibikin oleh dickyy
+  * Version: v1
+  */
+
+  .contact{
+      display: flex;
+      position: absolute;
+      width: 10%;
+      right: 0;
+      top: 0;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 3;
+  }
+  .contact img{
+      margin:10px;
+      height:30px;
+      opacity: .6;
+      transition: all .4s ease;
+  }
+  .contact img:hover{
+      opacity: 1;
+      transform: scale(1.1);
+  }
+  
+  #contact{
+      display: none;
+      height: auto;
+      text-align: center;
+      width: 100%;
+      background: #101010;
+      position: relative; 
+  }
+  .contact-header{
+      height: auto;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 45px;
+      font-family: raleway;
+      color: whitesmoke;
+      padding:10px;
+      padding-bottom: 30px;
+      padding-top: 60px;
+      font-weight: 900;
+  }
+  .contact-header-caption{
+      padding: 10px;
+      color: whitesmoke;
+      opacity: .9;
+      font-family:raleway;
+      font-size: 18px;
+  }
+  .contact-content{
+      width: 90%;
+      margin: auto;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  .contact-info{
+      width: 40%;
+      height: 500px;
+      background: url(../image/bagusnih.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 16px;
+      margin-bottom: 50px;
+      position: relative;
+      overflow: hidden;
+  }
+  .contact-info::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #101010;
+      opacity: .8;
+      pointer-events: none;
+  }
+  .contact-form{
+      height: 550px;
+      padding-right:40px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+  }
+  form{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width:auto;
+      align-items: center;
+      position: relative;
+  }
+  .input-line{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  .input-name{
+      width: 40%;
+      padding:10px 20px;
+      margin:14px;
+      border-radius: 8px;
+      outline: none;
+      background: #050505;
+      border:none;
+      color: whitesmoke;
+      font-family: poppins;
+      font-size: 18px;
+  }
+  .form-header{
+      font-size: 24px;
+      font-family: poppins;
+      font-weight: 400;
+      color: whitesmoke;
+      padding: 28px;
+  }
+  .input-subject{
+      width: 84%;
+      padding:10px 20px;
+      margin:24px;
+      border-radius: 8px;
+      outline: none;
+      background: #050505;
+      border:none;
+      color: whitesmoke;
+      font-family: poppins;
+      font-size: 18px;
+  }
+  .input-textarea{
+      width: 84%;
+      padding:10px 20px;
+      margin:15px;
+      height: 150px;
+      border-radius: 8px;
+      outline: none;
+      background: #050505;
+      border:none;
+      color: whitesmoke;
+      font-family: poppins;
+      font-size: 18px;
+  }
+ 
+  .contact-info-header{
+      position: relative;
+      z-index: 2;
+      font-size: 24px;
+      font-family: poppins;
+      font-weight: 400;
+      color: whitesmoke;
+      padding: 30px;
+  }
+  .contect-info-content-line{
+      height: auto;
+      padding: 10px;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      margin-left: 100px;
+  }
+  .contact-info-icon-text{
+      color: whitesmoke;
+      padding:15px;
+      font-family: poppins;
+  }
+  .contact-info-icon-text h6{
+      font-size: 15px;
+      opacity: .8;
+  }
+  .contact-info-icon-text p{
+      font-size: 14px;
+      opacity: .7;
+  }
+  .icon{
+      height:40px;
+      opacity: .8;
+  }
+  
+  @media only screen and (max-width: 550px){
+      .header-content{
+          height: 100vh;
+          width: 100%;
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          color: whitesmoke;
+          font-family: raleway;
+          font-weight: 500;
+          letter-spacing: 2px;
+          font-size: 40px;
+      }
+      .contact{
+          display: none;
+      }
+      .header-image{
+          float: right;
+          height: auto;
+          width: 0%;   
+      }
+      .social-media-links{
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          position: absolute;
+          padding: 10px;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+      }
+      .header-content-box{
+          padding-left: 0px;
+          z-index: 2;
+          text-align: center;
+      }
+      #contact{
+          display: none;
+      }
+              .contact-content{
+                  width: 90%;
+                  margin: auto;
+                  height: auto;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+              }
+              .contact-info{
+                  width: 90%;
+                  height: 500px;
+                  background-position: center;
+                  background-size: cover;
+                  border-radius: 16px;
+                  margin-bottom: 25px;
+                  position: relative;
+                  overflow: hidden;
+              }
+              .contact-info::before{
+                  content: "";
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background: #101010;
+                  opacity: .7;
+                  pointer-events: none;
+              }
+              .contact-form{
+                  height: auto;
+                  width: 90%;
+                  display: flex;
+                  padding-bottom: 40px;
+                  padding-right:0px;
+                  flex-direction: column;
+              }
+              form{
+                  display: flex;
+                  flex-direction: column;
+                  height: auto;
+                  width:auto;
+                  align-items: center;
+                  position: relative;
+              }
+           
+              .form-header{
+                  font-size: 22px;
+                  font-family: poppins;
+                  font-weight: 400;
+                  color: whitesmoke;
+                  padding: 20px;
+                  padding-top: 0px;
+              }
+              .contact-info-header{
+                  position: relative;
+                  z-index: 2;
+                  font-size: 24px;
+                  font-family: poppins;
+                  font-weight: 400;
+                  color: whitesmoke;
+                  padding: 20px;
+              }
+              .contect-info-content-line{
+                  height: auto;
+                  padding: 10px;
+                  position: relative;
+                  z-index: 2;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  text-align: left;
+                  margin-left: 5%;
+              }
+              .contact-info-icon-text{
+                  color: whitesmoke;
+                  padding:15px;
+                  font-family: poppins;
+              }
+              .contact-info-icon-text h6{
+                  font-size: 15px;
+                  opacity: .8;
+              }
+              .contact-info-icon-text p{
+                  font-size: 14px;
+                  opacity: .7;
+              }
+              .hire-me-section{
+                  display: none;
+              }
+             
+  }
